@@ -25,6 +25,9 @@ const Header = () => {
             </span>
           )}
         </Link>
+        <Link href="/login" className="text-lg">
+          ورود
+        </Link>
       </div>
     </header>
   );

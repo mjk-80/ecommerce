@@ -62,7 +62,7 @@ export default function ProductDetailPage({
       }
     }
     fetchProduct();
-  }, [params.id]);
+  }, [id]);
 
   if (loading) return <p className="text-center mt-10">در حال بارگزاری ...</p>;
   if (!product)
