@@ -1,3 +1,5 @@
+//این کامپوننت هدر سایت را نشان میدهد و شامل لینک هایی به بخش های مختلف سایت است
+
 "use client";
 
 import { useCart } from "../context/CartContext";

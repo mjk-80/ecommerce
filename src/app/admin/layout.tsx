@@ -1,3 +1,5 @@
+//این کد یک لایه مدیریت (Admin Layout) است که شامل ناوبری و محتوای اصلی است.
+
 import Link from "next/link";
 
 export default function AdminLayout({
@@ -8,7 +10,7 @@ export default function AdminLayout({
   return (
     <div>
       <nav className="bg-gray-800 text-white p-4 flex justify-between">
-        <h1 className="text-lg font-bold">🎯 پنل مدیریت</h1>
+        <h1 className="text-lg font-bold"> پنل مدیریت</h1>
         <div>
           <Link href="/admin" className="px-4 py-2">
             داشبورد

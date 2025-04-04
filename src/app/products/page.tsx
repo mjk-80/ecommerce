@@ -1,3 +1,5 @@
+//نمایش لیست محصولات به کاربر
+
 import ProductList from "../components/ProductList";
 import { getProducts } from "../lib/graphql";
 

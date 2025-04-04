@@ -1,3 +1,8 @@
+//این تابع برای بررسی اطلاعات ورودی (ایمیل و رمز عبور ) استفاده میشود
+//برای اینکه authorization انجام شود باید مقادیر زیر را وارد کنید
+//email = admin@example.com
+//password = 12345
+
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {

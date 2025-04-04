@@ -1,4 +1,8 @@
-"use client"; // این خط صفحه رو به Client Component تبدیل می‌کنه
+//صفحه لاگین
+//email: email@example.com
+//password: 12345
+
+"use client";
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";

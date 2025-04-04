@@ -1,3 +1,5 @@
+//ایجاد کانتکست برای مدیریت سبد خرید در کل برنامه
+
 "use client";
 
 import { createContext, useContext, useState } from "react";
@@ -51,6 +53,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
+// هوک شخصی‌سازی‌شده برای دسترسی راحت‌تر به context
 export function useCart() {
   const context = useContext(CartContext);
   if (!context) {

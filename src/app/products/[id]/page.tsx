@@ -1,7 +1,8 @@
+//صفحه جزئیات محصول
+
 "use client";
 
 import { useEffect, useState } from "react";
-// import { useRouter } from "next/router";
 import { useCart } from "@/app/context/CartContext";
 import Image from "next/image";
 
@@ -30,7 +31,7 @@ export default function ProductDetailPage({
     async function fetchProduct() {
       try {
         const res = await fetch(
-          "https://eu-west-2.cdn.hygraph.com/content/cm8wvbggp03gx08w2gbxlmrbs/master",
+          process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT as string,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
