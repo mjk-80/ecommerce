@@ -32,7 +32,7 @@ export default function ProductList({ products }: { products: Product[] }) {
               width={500}
               height={300}
               unoptimized
-              className="w-full h-40 object-cover rounded"
+              className="w-full h-60 object-cover rounded"
             />
 
             <h2 className="text-xl font-bold mt-2">{product.name}</h2>
