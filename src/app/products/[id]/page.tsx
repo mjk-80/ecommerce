@@ -4,6 +4,7 @@
 
 import { useEffect, useState } from "react";
 import { useCart } from "@/app/context/CartContext";
+import Link from "next/link";
 import Image from "next/image";
 
 interface Product {
@@ -76,8 +77,8 @@ export default function ProductDetailPage({
           src={product.image.url}
           alt={product.name}
           width={500}
-          height={500}
-          className="w-full h-auto rounded-lg"
+          height={300}
+          className="w-full h-[300px] object-cover rounded-lg"
           unoptimized
         />
         <h1 className="text-2xl font-bold mt-4">{product.name}</h1>
@@ -93,6 +94,11 @@ export default function ProductDetailPage({
         >
           افزودن به سبد خرید
         </button>
+        <Link href="/products" className="inline-block mt-4 ml-4">
+          <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">
+            بازگشت
+          </button>
+        </Link>
       </div>
     </div>
   );
