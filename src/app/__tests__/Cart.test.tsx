@@ -1,12 +1,12 @@
 //تست صفحه سبد خرید
 
 import { render, screen, fireEvent } from "@testing-library/react";
-import CartPage from "../page";
-import { useCart } from "../../context/CartContext";
+import CartPage from "../cart/page";
+import { useCart } from "../context/CartContext";
 import "@testing-library/jest-dom";
 
 // Mock کردن useCart به طور دقیق
-jest.mock("../../context/CartContext", () => ({
+jest.mock("../context/CartContext", () => ({
   useCart: jest.fn(),
 }));
 

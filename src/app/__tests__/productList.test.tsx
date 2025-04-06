@@ -2,14 +2,14 @@
 
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import ProductList from "../ProductList";
+import ProductList from "../components/ProductList";
 import "@testing-library/jest-dom";
 
 // تابع addToCart را mock می‌کنیم
 const mockAddToCart = jest.fn();
 
 // مسیر درست به useCart داخل context/CartContext
-jest.mock("../../context/CartContext", () => ({
+jest.mock("../context/CartContext", () => ({
   useCart: () => ({
     addToCart: mockAddToCart,
   }),
